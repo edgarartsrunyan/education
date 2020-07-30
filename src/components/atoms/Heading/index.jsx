@@ -10,6 +10,8 @@ const Heading = ({ size = "normal", title }) => {
       return <h3 className={`heading ${size}`}>{title}</h3>;
     case "small":
       return <h5 className={`heading ${size}`}>{title}</h5>;
+    default:
+      return null;
   }
 };
 

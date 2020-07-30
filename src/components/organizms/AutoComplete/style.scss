@@ -1,0 +1,30 @@
+@import "src/assets/styles/index";
+
+.auto-complete {
+  position: relative;
+
+  &-input {
+    border-radius: $border-radius $border-radius 0 0;
+  }
+
+  &-values {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba($black, .15);
+    background-color: $white;
+    border-radius: 0 0 $border-radius $border-radius;
+    max-height: 200px;
+    overflow-y: auto;
+
+    &-items {
+      padding: 15px;
+      color: $gray;
+
+      &:hover {
+        background-color: rgba($blue, .08);
+        cursor: pointer;
+      }
+    }
+  }
+}
