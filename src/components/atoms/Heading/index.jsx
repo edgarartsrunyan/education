@@ -2,7 +2,7 @@ import React from "react";
 
 import "./style.scss";
 
-const Heading = ({ size, title }) => {
+const Heading = ({ size = "normal", title }) => {
   switch (size) {
     case "big":
       return <h1 className={`heading ${size}`}>{title}</h1>;

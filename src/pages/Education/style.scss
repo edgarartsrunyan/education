@@ -1,0 +1,15 @@
+.education {
+  text-align: center;
+  margin-top: 60px;
+
+  &-button {
+    margin-top: 20px;
+  }
+
+  &-empty-text {
+    font-size: 36px !important;
+    max-width: 565px;
+    text-align: center;
+    margin: 80px auto 0;
+  }
+}

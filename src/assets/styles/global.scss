@@ -1,5 +1,6 @@
 * {
   outline: none !important;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,3 +19,18 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
 
+input, textarea {
+  background-color: $white;
+  border: 0;
+  font-size: 16px;
+  color: $gray;
+  padding: 15px;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  width: 100%;
+  &::placeholder {
+    font-size: 16px;
+    color: $silver;
+    font-weight: $regular;
+  }
+}
