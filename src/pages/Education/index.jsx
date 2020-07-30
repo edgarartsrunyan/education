@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import Button from "../../components/molecules/Button";
 import Text from "../../components/atoms/Text";
 import Modal from "../../components/organizms/Modal";
+import EducationWrapper from "./EducationWrapper";
 
 const Education = () => {
   const name = useSelector((state) => state.userName.name);
@@ -33,7 +34,7 @@ const Education = () => {
             text={"You have not added educations yet, please add new education"}
           />
         ) : (
-          <div>Educations</div>
+          <EducationWrapper />
         )}
       </div>
     </>

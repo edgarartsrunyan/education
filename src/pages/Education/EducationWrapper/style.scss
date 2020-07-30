@@ -1,0 +1,73 @@
+@import "src/assets/styles/index";
+
+.education-wrapper {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+
+
+  &-sidebar {
+    min-width: 350px;
+    padding: 15px;
+    border-radius: $border-radius;
+    background-color: $white;
+    box-shadow: $shadow;
+    height: calc(100vh - 240px);
+
+    &-wrapper {
+      &-item {
+        padding: 15px;
+        text-align: left;
+        cursor: pointer;
+
+        &.active {
+          color: $blue;
+        }
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #E5E5E5;
+        }
+      }
+    }
+  }
+
+  &-items {
+    flex-grow: 1;
+    margin-left: 60px;
+    box-shadow: $shadow;
+    border-radius: $border-radius;
+    padding: 15px;
+    background-color: $white;
+    text-align: left;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &-name-of-school {
+        margin-left: 15px;
+      }
+
+      &-study-year {
+        font-weight: $regular;
+      }
+    }
+
+    &-info {
+      display: flex;
+      align-items: flex-start;
+      margin: 16px 0;
+
+      &-item {
+        &:first-of-type {
+          margin-right: 50px;
+        }
+      }
+
+      &-text {
+        margin-top: 5px;
+      }
+    }
+  }
+}
