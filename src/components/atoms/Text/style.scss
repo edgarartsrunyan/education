@@ -1,0 +1,18 @@
+@import "src/assets/styles/index";
+
+.text {
+  color: $gray;
+  font-weight: $semiBold;
+
+  &.big {
+    font-size: 24px;
+  }
+
+  &.normal {
+    font-size: 20px;
+  }
+
+  &.small {
+    font-size: 16px;
+  }
+}
